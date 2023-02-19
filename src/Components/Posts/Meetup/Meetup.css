@@ -30,8 +30,8 @@ p{
 .ml-1{
     margin-left: 0.75rem;
 }
-.mt-3{
-    margin-top: 3rem;
+.mt-2{
+    margin-top: 2rem;
 }
 .writer{
     font-weight: 700;
@@ -47,25 +47,17 @@ p{
     padding: 0.5rem 0.75rem;
 }
 
-.drop-down-btn{
-    color: #343A40;
-    background-color: #CED4DA;
-    padding: 0.5rem 0.75rem;
-    font-weight: 500;
-    border-radius: 4px; 
-}
-
 .txt-bold{
     font-weight: 700;
     font-size: 0.9em;
 }
-.Timesjobs-btn{
+.website-btn{
     width: 100%;
     border: #CED4DA solid 1px !important;
-    color: #3CADA3 !important;
+    color: #FF6B6B !important;
     font-weight: 500 !important;
     font-size: 0.85em !important;
 }
-.Timesjobs-btn:hover{
+.website-btn:hover{
 background-color: #fff !important;
 }

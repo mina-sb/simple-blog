@@ -5,13 +5,13 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <div className="banner">
-      <Container className="px-5 eee">
-        <Col>
+      <Container>
+        <Col className="d-md-none">
           <Row>
-            <div className="d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center mt-4">
               <i className="fa fa-arrow-left txt-white"></i>
-              <div>
-                <button type="button" class="btn btn-join ml-auto">
+              <div className=" ml-auto">
+                <button type="button" class="btn btn-join">
                   Join Group
                 </button>
               </div>

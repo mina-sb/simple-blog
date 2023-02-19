@@ -15,8 +15,6 @@
     border-radius: 35px !important;
     border: 0 !important;
     box-shadow: none; 
+    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%) !important;
 }
-.search_txt:focus
- {
-  outline: none;
-}
+

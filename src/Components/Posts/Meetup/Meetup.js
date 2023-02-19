@@ -1,5 +1,7 @@
 import React from "react";
 import { Card, Button, Row, Col } from "react-bootstrap";
+import PostDropDown from "../PostDropDown/PostDropDown";
+import PostFooter from "../PostFooter/PostFooter";
 import "./Meetup.css";
 
 const Meetup = () => {
@@ -18,7 +20,7 @@ const Meetup = () => {
               <h4>Finance & Investment Elite Social Mixer @Lujiazui</h4>
             </div>
             <div className="ml-auto d-flex align-items-center">
-              <i className="fa fa-ellipsis-h ml-3 drop-down-btn"></i>
+              <PostDropDown />
             </div>
           </Col>
         </Row>
@@ -44,20 +46,7 @@ const Meetup = () => {
             </button>
           </Col>
         </Row>
-        <Row>
-          <Col className="d-flex mt-2">
-            <div className="pr-2">
-              {" "}
-              <i className="px-2 fa fa-user"></i>
-            </div>
-            <div className="px-2 writer">Sarthak Kamra</div>
-            <div className="ml-auto d-flex align-items-center">
-              <i className="px-2 fa fa-eye gray-txt"></i>
-              <div className="gray-txt">1.4k views</div>
-              <i className="fa fa-share-alt ml-3 share-btn"></i>
-            </div>
-          </Col>
-        </Row>
+        <PostFooter />
       </Card.Body>
     </Card>
   );

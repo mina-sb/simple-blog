@@ -18,8 +18,8 @@
   border: #fff 1px solid !important;
   background-color: none !important;
   color : #fff !important;
-  font-weight: 500 !important;
-  font-size: 1.4em !important;
+  font-weight: 400 !important;
+  font-size: 1.2em !important;
  
  }
  .btn-group:hover,
@@ -32,6 +32,9 @@
  .txt-white{
   color: #fff;
  }
- .eee{
-  background-color: aquamarine !important;
- }
+.ww{
+  background-color: aqua;
+}
+.ml-auto{
+  margin-left: auto !important;
+}

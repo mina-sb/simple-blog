@@ -4,7 +4,7 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   return (
-    <Container className="d-flex flex-row-reverse">
+    <Container className="d-flex flex-row-reverse d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
       <Col md={9}>
         <Row className="mt-5">
           <Col className="d-flex">

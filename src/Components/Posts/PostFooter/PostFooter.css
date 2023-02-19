@@ -1,0 +1,36 @@
+.ml-auto{
+  margin-left: auto;
+}
+.ml-3{
+    margin-left: 2rem;
+}
+.ml-1{
+    margin-left: 0.75rem;
+}
+.mt-3{
+    margin-top: 3rem;
+}
+.pr-1{
+    padding-right: 1rem;
+}
+.writer{
+    font-weight: 700;
+}
+.gray-txt{
+    color:#495057;
+    font-weight: 500;
+    font-size: 0.75em;
+}
+.share-btn{
+    color: #343A40;
+}
+
+.share-btn-sm{
+    background-color: #E9ECEF;
+    border-radius: 3px;
+    padding: 0.2rem 0.2rem;
+
+}
+.share-btn-sm span{
+    font-weight: 500;
+}
