@@ -27,13 +27,16 @@ const Header = () => {
                   <Col>
                     <Row>
                       <Col md={6} className="dd">
-                        <Form inline>
-                          <Form.Control
-                            type="text"
-                            placeholder="Search for your favorite groups in ATGearch"
-                            className="search_txt"
-                          />
-                        </Form>
+                        <div className="d-flex justify-content-between  search-div align-items-center">
+                          <Form inline className="flex-grow-1">
+                            <Form.Control
+                              type="text"
+                              placeholder="Search for your favorite groups in ATGearch"
+                              className="search_txt px-4 "
+                            />
+                          </Form>
+                          <i className="fa fa-search px-4 search-icon"></i>
+                        </div>
                       </Col>
                       <Col md={6} className="create-account bb">
                         <Nav.Link onClick={openRegister}>
