@@ -8,6 +8,35 @@
     font-size: 0.75em;
     text-align: justify;
 }
-.cc{
-    background-color: aqua;
+.recommended-gr{
+    text-align: left;
+    font-size: 1em;
+    font-weight: 500;
+    color: #343A40;
 }
+.mr-2{
+    margin-right: .6rem;
+}
+.profile-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.follow-btn{
+    background-color: #DEE2E6 !important;
+    color: #212529 !important;
+    font-weight: 500 !important;
+    outline: 0 !important;
+    border: 0 !important;
+    border-radius: 15px !important;
+    --bs-btn-padding-y: 0rem !important;
+    font-size: .8em !important;
+  }
+  .more{
+    color: #4C6FF5;
+    font-size: .8em;
+    font-weight: 500;
+  }

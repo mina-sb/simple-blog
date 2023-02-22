@@ -14,14 +14,20 @@ import { AppContext } from "../AppContext";
 import "./SignUp.css";
 
 const SignUp = () => {
-  const { showModal, showLogin, showRegister } = useContext(AppContext);
+  const { showModal, showRegister, loggedInFlag } = useContext(AppContext);
   const [modal, setModal] = showModal;
   const [register, setRegister] = showRegister;
+  const [loggedIn, setLoggedIn] = loggedInFlag;
 
   const closeRegister = () => {
-    console.log("a");
     setModal(false);
     setRegister(false);
+  };
+
+  const createAccount = () => {
+    setModal(false);
+    setRegister(false);
+    setLoggedIn(true);
   };
   return (
     <Container className="sign-up">
@@ -98,13 +104,19 @@ const SignUp = () => {
                   </tr>
                 </Table>
                 <div className="d-none d-xs-none d-sm-block d-md-block">
-                  <Button className="btn-block sign-up-btn create-btn">
+                  <Button
+                    className="btn-block sign-up-btn create-btn"
+                    onClick={createAccount}
+                  >
                     Create Account
                   </Button>
                 </div>
 
                 <div className="d-flex justify-content-between align-items-center d-xs-block d-sm-none">
-                  <Button className="create-btn sign-up-btn-sm">
+                  <Button
+                    className="create-btn sign-up-btn-sm"
+                    onClick={createAccount}
+                  >
                     {" "}
                     Create Account
                   </Button>

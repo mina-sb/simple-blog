@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Col, Nav, Row, Button } from "react-bootstrap";
+import { AppContext } from "../AppContext";
 import "./Menu.css";
 
 const Menu = () => {
+  const { loggedInFlag } = useContext(AppContext);
+  const [loggedIn, setLoggedIn] = loggedInFlag;
+
   return (
     <Container className="p-0 m-0">
       <Container className="pt-5 pb-3 d-none d-md-block">
@@ -22,10 +26,18 @@ const Menu = () => {
             <Button variant="secondary mx-2" className="write-post-btn">
               Write a Post <i className="fa fa-caret-down mx-2 arrow"></i>
             </Button>
-            <Button variant="primary">
-              {" "}
-              <i className="fa fa-group mx-2"></i> Join Group{" "}
-            </Button>
+
+            {loggedIn ? (
+              <Button variant="outline-secondary" className="leave-btn">
+                {" "}
+                <i className="fa fa-sign-out mx-2 "></i> Leave Group{" "}
+              </Button>
+            ) : (
+              <Button variant="primary">
+                {" "}
+                <i className="fa fa-group mx-2"></i> Join Group{" "}
+              </Button>
+            )}
           </Col>
           <hr />
         </Row>
