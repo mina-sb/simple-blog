@@ -4,8 +4,8 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   return (
-    <Container className="d-flex flex-row-reverse d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
-      <Col md={9}>
+    <Container className="p-0 d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
+      <Col md={{ span: 9, offset: 3 }}>
         <Row className="mt-5">
           <Col className="d-flex">
             <div className="px-2">
