@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Button,
   Card,
@@ -10,16 +10,29 @@ import {
   Table,
 } from "react-bootstrap";
 import CardHeader from "react-bootstrap/esm/CardHeader";
+import { AppContext } from "../AppContext";
 import "./SignUp.css";
 
 const SignUp = () => {
+  const { showModal, showLogin, showRegister } = useContext(AppContext);
+  const [modal, setModal] = showModal;
+  const [register, setRegister] = showRegister;
+
+  const closeRegister = () => {
+    console.log("a");
+    setModal(false);
+    setRegister(false);
+  };
   return (
     <Container className="sign-up">
       <div className="d-flex justify-content-end mb-3">
-        <i className="fa fa-times close-btn p-1 d-xs-block d-sm-none"></i>
+        <i
+          className="fa fa-times close-btn p-1 d-none d-xs-none d-sm-none d-md-block  d-lg-block d-xl-block"
+          onClick={closeRegister}
+        ></i>
       </div>
       <Card className="sign-up-card">
-        <CardHeader className="card-header d-sm-none d-xs-none d-md-block">
+        <CardHeader className="card-header d-none d-xs-none d-sm-none d-md-block  d-lg-block d-xl-block">
           <p className="header">
             Let's learn, share & inspire each other with our passion for
             computer engineering. Sign up now 🤘🏼
@@ -31,7 +44,10 @@ const SignUp = () => {
               <Container className="px-4">
                 <div className="d-flex justify-content-between align-items-center mb-3">
                   <h3 className="my-4">Create Account</h3>
-                  <i className="fa fa-times close-btn-sm p-1 d-xs-block d-sm-block d-md-none"></i>
+                  <i
+                    className="fa fa-times close-btn-sm p-1 d-xs-block d-sm-block d-md-none"
+                    onClick={closeRegister}
+                  ></i>
                 </div>
                 <Table bordered size="md" className="table">
                   <tr>
