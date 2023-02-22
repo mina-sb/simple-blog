@@ -9,7 +9,10 @@ const PostFooter = () => {
         <Col className="d-flex mt-3">
           <div className="pr-2">
             {" "}
-            <i className="px-2 fa fa-user"></i>
+            <img
+              className="profile-img mx-2"
+              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />{" "}
           </div>
           <div className="px-2 writer">Sarthak Kamra</div>
           <div className="ml-auto d-flex align-items-center">
@@ -21,9 +24,12 @@ const PostFooter = () => {
       </Row>
       <Row className="d-sm-block d-xs-block d-md-none">
         <Col className="d-flex mt-3">
-          <div className="pr-2">
+          <div className="pr-2 mx-2">
             {" "}
-            <i className="px-2 fa fa-user"></i>
+            <img
+              className="profile-img"
+              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />{" "}
           </div>
           <div className="px-2 writer">
             Sarthak Kamra
