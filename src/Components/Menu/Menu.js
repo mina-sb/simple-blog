@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Container, Col, Nav, Row, Button } from "react-bootstrap";
 import { AppContext } from "../AppContext";
 import "./Menu.css";
@@ -6,6 +6,7 @@ import "./Menu.css";
 const Menu = () => {
   const { loggedInFlag } = useContext(AppContext);
   const [loggedIn, setLoggedIn] = loggedInFlag;
+  const [activeTab, setActiveTab] = useState(0);
 
   return (
     <Container className="p-0 m-0">
@@ -13,13 +14,48 @@ const Menu = () => {
         <Row>
           <Col md={6}>
             <Nav>
-              <Nav.Link className="active-tab first-tab">
+              <Nav.Link
+                onClick={() => {
+                  setActiveTab(0);
+                }}
+                className={`first-tab tab ${
+                  activeTab == 0 ? "active-tab " : ""
+                }`}
+              >
                 All Posts(32)
               </Nav.Link>
-              <Nav.Link className="tab">Article</Nav.Link>
-              <Nav.Link className="active-tab">Event</Nav.Link>
-              <Nav.Link className="tab">Education</Nav.Link>
-              <Nav.Link className="tab">Job</Nav.Link>
+              <Nav.Link
+                onClick={() => {
+                  setActiveTab(1);
+                }}
+                className={`tab ${activeTab == 1 ? "active-tab " : ""}`}
+              >
+                Article
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => {
+                  setActiveTab(2);
+                }}
+                className={`tab ${activeTab == 2 ? "active-tab " : ""}`}
+              >
+                Event
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => {
+                  setActiveTab(3);
+                }}
+                className={`tab ${activeTab == 3 ? "active-tab " : ""}`}
+              >
+                Education
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => {
+                  setActiveTab(4);
+                }}
+                className={`tab ${activeTab == 4 ? "active-tab " : ""}`}
+              >
+                Job
+              </Nav.Link>
             </Nav>
           </Col>
           <Col md={6} className="buttons">
