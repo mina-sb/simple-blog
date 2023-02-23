@@ -1,4 +1,4 @@
-# Simple React app designed responsively based on figma layout using bootstrap
+ <h2>Simple React app designed responsively based on figma layout using bootstrap</h2>
 <br />
 Main features:
 <br />
