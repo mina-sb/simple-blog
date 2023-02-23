@@ -11,8 +11,9 @@ Main features:
 </ul>
 
 <br />
-<h3>Live Demo</h3>
-mina-sb.github.io/simple-blog/
+<h3>
+<a href="mina-sb.github.io/simple-blog/
+">Live Demo</a></h3>
 <br />
 <h3>Figma Layouts</h3>
 
