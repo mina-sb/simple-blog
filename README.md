@@ -12,6 +12,8 @@ Main features:
 
 <br />
 <h3>Live Demo</h3>
+mina-sb.github.io/simple-blog/
+<br />
 <h3>Figma Layouts</h3>
 
 <img width="400" alt="Diagram - Groups - copy" src="https://user-images.githubusercontent.com/110327510/220936673-031349bf-f065-4f40-9960-59c85d56fafb.png">
