@@ -8,7 +8,7 @@ const Sidebar = () => {
   const [loggedIn, setLoggedIn] = loggedInFlag;
 
   return (
-    <Container className="p-0 d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
+    <Container className="p-0 d-xs-none d-none d-sm-none d-md-block d-lg-block d-xl-block">
       <Col md={{ span: 9, offset: 3 }}>
         <Row className="mt-5">
           <Col className="d-flex">

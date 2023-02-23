@@ -17,7 +17,7 @@ const Banner = () => {
     <div className="banner">
       <Container>
         <Col className="d-md-none">
-          <Row>
+          <Row className="mx-3">
             <div className="d-flex align-items-center mt-4">
               <i className="fa fa-arrow-left txt-white"></i>
               <div className=" ml-auto">

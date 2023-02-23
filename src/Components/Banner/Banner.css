@@ -32,9 +32,11 @@
  .txt-white{
   color: #fff;
  }
-.ww{
-  background-color: aqua;
-}
+
 .ml-auto{
   margin-left: auto !important;
+}
+.mx-3{
+  margin-right: 3rem !important;
+  margin-left: 3rem !important;
 }
